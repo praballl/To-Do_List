@@ -50,10 +50,8 @@ app.get("/", function (req, res) {
 })
 
 app.post("/", function (req, res) {
-    console.log(req.body)
     const itemName = req.body.inputValue;
     const listName = req.body.list;
-    console.log(itemName)
 
     let item = new Item({
         name: itemName
